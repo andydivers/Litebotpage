@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Market Mood Agent – Music for Traders</title>
+    <!-- Подключаем стили прямо в HTML, чтобы не зависеть от внешних файлов -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: linear-gradient(135deg, #0a0f1f 0%, #1a1f3f 100%);
+            color: #e0e8ff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        .container { max-width: 700px; width: 100%; }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #6ee7ff, #b084ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #8892b0;
+            margin-bottom: 2.5rem;
+        }
+        .demo-box {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #6ee7ff, #b084ff);
+            color: #0a0f1f;
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding: 0.9rem 2.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 1rem 0.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(110,231,255,0.3);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #6ee7ff;
+            color: #6ee7ff;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .features {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 180px;
+        }
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            margin-top: 3rem;
+            color: #5a6680;
+            font-size: 0.9rem;
+        }
+        a { color: #6ee7ff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 AI Market Mood Agent</h1>
+        <p class="subtitle">
+            Autonomous agent that scans crypto & stock markets, computes the global mood, and <strong>generates original music</strong> — daily.
+        </p>
+
+        <!-- Блок с демо-видео (замени ссылку на свою) -->
+        <div class="demo-box">
+            <h2>Watch Demo</h2>
+            <div class="video-container">
+                <!-- Вставь сюда embed-ссылку своего YouTube-видео -->
+                <iframe src="https://www.youtube.com/embed/ТВОЙ_ID_ВИДЕО" 
+                        title="AI Market Mood Agent Demo" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div>
+                <a href="ТВОЯ_ССЫЛКА_НА_STREAMLIT" class="btn" target="_blank">🚀 Try Live Demo</a>
+                <a href="https://github.com/ТВОЙ_ЮЗЕРНЕЙМ/ai-market-mood" class="btn btn-outline" target="_blank">📁 View on GitHub</a>
+            </div>
+        </div>
+
+        <!-- Фичи агента (кратко) -->
+        <div class="features">
+            <div class="feature-card">
+                <h3>📊 Market Scan</h3>
+                <p>BTC & S&P 500 volatility analysis via yfinance</p>
+            </div>
+            <div class="feature-card">
+                <h3>🧠 AI Reasoning</h3>
+                <p>Llama 3.3 70B on Groq determines mood & genre</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎹 Music Generation</h3>
+                <p>PixelAPI creates a unique track from scratch</p>
+            </div>
+        </div>
+
+        <!-- Pitch-информация -->
+        <div style="margin-top: 1.5rem; font-size: 1rem; color: #8892b0;">
+            <p>Built for <strong>a16z Speedrun</strong> application · 100% free stack</p>
+            <p style="margin-top: 0.5rem;">Next: personalized trader focus music, auto-daily updates</p>
+        </div>
+
+        <footer>
+            <p>© 2026 AI Market Mood Agent · Groq + PixelAPI + Streamlit</p>
+        </footer>
+    </div>
+</body>
+</html>
